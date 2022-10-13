@@ -15,7 +15,7 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
             
             HUD.createStat(0,100,3);
             
-            //Setting up Player
+            //configurações do jogador
             var playerConfiguration = {
                 health: 100,
                 lives: 3,
@@ -28,7 +28,7 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
             Player.setBulletGroup(Bullets.create(10,'bullet',100));
             Player.setExplosionGroup(Explosions.create(1,'kaboom'));
             
-            //Setting up Aliens
+            //configuracões dos Aliens
             var alienConfiguration = {
                 rows:4,
                 cols:10,

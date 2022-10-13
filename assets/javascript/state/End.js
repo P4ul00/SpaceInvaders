@@ -9,7 +9,7 @@ define(['module/HUD'],function(HUD){
         create: function(){
             HUD.createTitle('  Game Over \n Press Spacebar');
                         
-            //Starting the Play state after the spacebar is down
+            //inicia o jogo depois de tocar na barra de espaço
             _game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onDown.addOnce(function(){
                 _game.state.start(_nextState);
             }); 

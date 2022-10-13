@@ -10,26 +10,21 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
     var _Load = {        
         preload: function(){
         
-            //Background
+            //Fundo
             Background.init(_game,0,'easy');
             Background.preload();
-
             //Hud
             HUD.init(_game);
-
-            //Player            
+            //Jogador           
             Player.init(_game);
-            Player.preload();
-            
+            Player.preload();    
             //Aliens
             Aliens.init(_game);
             Aliens.preload();
-
-            //Bullets
+            //Tiros
             Bullets.init(_game);
-            Bullets.preload();
-            
-            //Exploisons
+            Bullets.preload();        
+            //Explosões
             Explosions.init(_game);
             Explosions.preload();
                 
