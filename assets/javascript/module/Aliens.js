@@ -53,7 +53,7 @@ define(['module/HUD'],function(HUD){
             }
                        
 
-            //setting aliens postition
+            //configuracões dos aliens
             _alienGroup.x = 100;
             _alienGroup.y = 50;
 
@@ -87,7 +87,7 @@ define(['module/HUD'],function(HUD){
 
                     _game.physics.arcade.moveToObject(_bullet,_playerShip,_bulletSpeed);
                 }
-            //all alien died
+            //quando todos aliens morrem
             }else if(_livingAlien.length == 0){
                 _game.state.start('End');
             }

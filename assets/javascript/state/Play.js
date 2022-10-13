@@ -46,7 +46,7 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
 
             Player.setAliensAndAlienGroup(aliens);
             
-            //They start shoting, shooting is triggered by a time loop
+            //
             Player.startShooting();
             aliens.startShooting();
         },
@@ -54,7 +54,7 @@ define(['module/Background','module/Player','module/Aliens','module/Bullets','mo
             Background.update();
             Player.update();
 
-            //Setting up the collision handling
+            //configuração de colisão
             aliens.createOverLap(Player.getBulletGroup());
             Player.createOverLap(aliens.getBulletGroup());
         }        
